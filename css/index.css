@@ -1,0 +1,73 @@
+/*母体div样式*/
+.content{
+	position: relative;		/*父级相对定位*/
+	width: 640px;
+	height: 640px;
+	margin: 50px auto;		/*子元素居中自适应*/
+	margin-bottom: 0px;
+}
+/*暂停和开始按钮的样式*/
+.btn{
+	width: 100%;
+	height: 100%;
+	position: absolute;		/*子级绝对定位*/
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 2;
+}
+.btn button{
+	border: none;
+	background: none;
+	background-size: 100%;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.startBtn button{
+	width: 200px;
+	height: 200px;
+	background-image: url(../image/start.png);
+	margin-top: -100px;
+	margin-left: -100px;
+	background-size: 100%;
+}
+.pauseBtn{
+	display: none;
+}
+.pauseBtn button{
+	width: 80px;
+	height: 80px;
+	border-radius: 53% 53% 39% 39%;
+	background-image: url(../image/paureStart.jpg);
+	margin-top: -40px;
+	margin-left: -40px;
+	background-size: 100%;
+}
+#snakeWrap{
+	position: relative;
+	width: 600px;
+	height: 600px;
+	background-color: rgb(180,100,188);
+	border: 20px solid #7dd9ff;
+}
+#snakeWrap div{
+	width: 20px;
+	height: 20px;
+}
+.snakeHead{
+	background-image: url(../image/snakeHead.jpg);
+	background-size: cover;
+	border-radius: 50%;
+}
+.snakeBody{
+	background-color: rgb(1,255,100);
+	border-radius: 50%;
+}
+.food{
+	border-radius: 20px;
+	background-image: url(../image/pg.jpg);
+	background-size: cover;
+}
